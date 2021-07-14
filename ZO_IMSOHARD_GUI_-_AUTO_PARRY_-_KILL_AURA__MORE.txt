@@ -1,0 +1,7 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aidez/ZO/main/IM%20ZO%20HARD'),true))()
+
+AUTO RETALIATE – PRESS G KEY
+REMOTE HITS – PRESS H KEY
+EXPANDED HITBOXES – PRESS J KEY
+AUTO PARRY – PRESS K KEY
+KILL AURA – PRESS L KEY

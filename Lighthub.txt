@@ -1,0 +1,2 @@
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SaveTheNoob/Fat/main/script%20(6).lua"))()

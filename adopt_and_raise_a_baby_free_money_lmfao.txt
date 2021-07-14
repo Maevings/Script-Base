@@ -1,0 +1,13 @@
+made by 0_0xdwashackedFTOPAYRESPECT
+ 
+ 
+game.ReplicatedStorage.NetworkEvent:FireServer("AwardCash",anyamounthere)
+ 
+ 
+ 
+https://www.roblox.com/games/383793228/Adopt-and-Raise-a-Baby
+ 
+ 
+ 
+ 
+get any amount of money you want!

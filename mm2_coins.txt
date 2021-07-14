@@ -1,0 +1,11 @@
+local player = game.Players.LocalPlayer
+
+for _, coin in pairs(game.Workspace:GetDescendants()) do
+	if coin.Name == "Coin_Server" and coin:IsA("Part") then
+	    wait(math.random(1,2))
+	    player.Character.HumanoidRootPart.CFrame = CFrame.new(coin.Position)
+	    wait(.5)
+	    player.Character.Humanoid:MoveTo(player.Character.HumanoidRootPart.Position + player.Character.HumanoidRootPart.CFrame.LookVector * 5)
+	    wait(2)
+	end
+end

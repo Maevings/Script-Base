@@ -1,0 +1,3 @@
+while wait() do
+game.Players:ReportAbuse(game.Players.NAME, "Exploiting", "HES EXPLOITING!!!!")
+end

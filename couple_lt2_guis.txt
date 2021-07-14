@@ -1,0 +1,170 @@
+local ScreenGui = Instance.new("ScreenGui")
+local MainGui = Instance.new("Frame")
+local Blood = Instance.new("TextButton")
+local Ferry = Instance.new("TextButton")
+local Dirt = Instance.new("TextButton")
+local Syntax = Instance.new("TextButton")
+local ExtremeLumber = Instance.new("TextButton")
+local DarkLumber = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local OpenGui = Instance.new("TextButton")
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+    wait(0.3)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "RainBow Hub";
+    Text = "Successfully Loaded..."
+})
+ 
+ 
+MainGui.Name = "MainGui"
+MainGui.Parent = ScreenGui
+MainGui.BackgroundColor3 = Color3.new(1, 1, 1)
+MainGui.Position = UDim2.new(0.388503462, 0, 0.116910227, 0)
+MainGui.Size = UDim2.new(0, 402, 0, 304)
+MainGui.Active = true
+MainGui.Draggable = true
+ 
+Blood.Name = "Blood"
+Blood.Parent = MainGui
+Blood.BackgroundColor3 = Color3.new(1, 1, 1)
+Blood.BackgroundTransparency = 1
+Blood.Position = UDim2.new(0.0497512445, 0, 0.263552606, 0)
+Blood.Size = UDim2.new(0, 159, 0, 47)
+Blood.Font = Enum.Font.SourceSans
+Blood.Text = "Blood"
+Blood.TextColor3 = Color3.new(0, 0, 0)
+Blood.TextSize = 30
+Blood.MouseButton1Down:connect(function()
+ loadstring(game:HttpGet(('https://pastebin.com/raw/qt3SDXvH'),true))()
+end)
+ 
+Ferry.Name = "Ferry"
+Ferry.Parent = MainGui
+Ferry.BackgroundColor3 = Color3.new(1, 1, 1)
+Ferry.BackgroundTransparency = 1
+Ferry.Position = UDim2.new(0.0497512445, 0, 0.546447396, 0)
+Ferry.Size = UDim2.new(0, 159, 0, 50)
+Ferry.Font = Enum.Font.SourceSans
+Ferry.Text = "Ferry"
+Ferry.TextColor3 = Color3.new(0, 0, 0)
+Ferry.TextSize = 30
+Ferry.MouseButton1Down:connect(function()
+ loadstring(game:HttpGet(('https://pastebin.com/raw/D46E1PYw'),true))()
+end)
+ 
+Dirt.Name = "Dirt"
+Dirt.Parent = MainGui
+Dirt.BackgroundColor3 = Color3.new(1, 1, 1)
+Dirt.BackgroundTransparency = 1
+Dirt.Position = UDim2.new(0.0497512445, 0, 0.803026319, 0)
+Dirt.Size = UDim2.new(0, 159, 0, 50)
+Dirt.Font = Enum.Font.SourceSans
+Dirt.Text = "Dirt"
+Dirt.TextColor3 = Color3.new(0, 0, 0)
+Dirt.TextSize = 30
+Dirt.MouseButton1Down:connect(function()
+ loadstring(game:HttpGet(('https://pastebin.com/raw/fwCi3FKK'),true))()
+end)
+ 
+Syntax.Name = "Syntax"
+Syntax.Parent = MainGui
+Syntax.BackgroundColor3 = Color3.new(1, 1, 1)
+Syntax.BackgroundTransparency = 1
+Syntax.Position = UDim2.new(0.527363181, 0, 0.253684223, 0)
+Syntax.Size = UDim2.new(0, 159, 0, 50)
+Syntax.Font = Enum.Font.SourceSans
+Syntax.Text = "Syntax"
+Syntax.TextColor3 = Color3.new(0, 0, 0)
+Syntax.TextSize = 30
+Syntax.MouseButton1Down:connect(function()
+ loadstring(game:HttpGet(('https://pastebin.com/raw/wWxsHtxJ'),true))()
+end)
+ 
+ExtremeLumber.Name = "ExtremeLumber "
+ExtremeLumber.Parent = MainGui
+ExtremeLumber.BackgroundColor3 = Color3.new(1, 1, 1)
+ExtremeLumber.BackgroundTransparency = 1
+ExtremeLumber.Position = UDim2.new(0.527363181, 0, 0.546447396, 0)
+ExtremeLumber.Size = UDim2.new(0, 159, 0, 50)
+ExtremeLumber.Font = Enum.Font.SourceSans
+ExtremeLumber.Text = "Extreme Lumber "
+ExtremeLumber.TextColor3 = Color3.new(0, 0, 0)
+ExtremeLumber.TextSize = 30
+ExtremeLumber.MouseButton1Down:connect(function()
+ loadstring(game:HttpGet(('https://pastebin.com/raw/PvQMf5vv'),true))()
+end)
+ 
+DarkLumber.Name = "DarkLumber "
+DarkLumber.Parent = MainGui
+DarkLumber.BackgroundColor3 = Color3.new(1, 1, 1)
+DarkLumber.BackgroundTransparency = 1
+DarkLumber.Position = UDim2.new(0.527363181, 0, 0.832631588, 0)
+DarkLumber.Size = UDim2.new(0, 159, 0, 50)
+DarkLumber.Font = Enum.Font.SourceSans
+DarkLumber.Text = "Dark Lumber "
+DarkLumber.TextColor3 = Color3.new(0, 0, 0)
+DarkLumber.TextSize = 30
+DarkLumber.MouseButton1Down:connect(function()
+ loadstring(game:HttpGet(('https://pastebin.com/raw/nxw8X20A'),true))()
+end)
+ 
+TextLabel.Parent = MainGui
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(0, 402, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "RainBow Gui Hub Made By exploiter joe "
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 29
+ 
+OpenGui.Name = "OpenGui"
+OpenGui.Parent = ScreenGui
+OpenGui.BackgroundColor3 = Color3.new(1, 1, 1)
+OpenGui.Position = UDim2.new(0.0109018832, 0, 0.887265146, 0)
+OpenGui.Size = UDim2.new(0, 106, 0, 30)
+OpenGui.Font = Enum.Font.SourceSans
+OpenGui.Text = "Open"
+OpenGui.TextColor3 = Color3.new(0, 0, 0)
+OpenGui.TextSize = 30
+ 
+-- Scripts:
+ 
+local function WAXASRS_fake_script() -- MainGui.LocalScript
+    local script = Instance.new('LocalScript', MainGui)
+ 
+    function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+    counter = 0
+   
+    while wait (0.1)do
+        script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+        counter = counter + 0.01
+    end
+end
+coroutine.wrap(WAXASRS_fake_script)()
+local function VVFYDR_fake_script() -- OpenGui.LocalScript
+    local script = Instance.new('LocalScript', OpenGui)
+ 
+    local frame = script.Parent.Parent.MainGui
+    local open = false
+    script.Parent.MouseButton1Click:Connect(function()
+        if frame.Visible == false then
+            frame.Visible = true
+        else
+            frame.Visible = false
+        end
+    end)
+   
+    function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+    counter = 0
+   
+    while wait (0.1)do
+        script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+        counter = counter + 0.01
+    end
+end
+coroutine.wrap(VVFYDR_fake_script)()

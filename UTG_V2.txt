@@ -1,0 +1,774 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UTG_V2 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local SubTitile = Instance.new("TextLabel")
+local Welcome = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Credits = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local OptionListFrame = Instance.new("Frame")
+local OptionList = Instance.new("ScrollingFrame")
+local Sonic = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Gale = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Among_Us = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Killbot = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local NekoMaid = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Smug = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local ShadowBlade = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local SwordStand = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Neptunion = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local RbNeptunion = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Wall = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local achroGlicher = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local FlamingCube = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local Spider = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Cop = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Chips = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Joy = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UMD = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local Chill = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local Grapple = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local ServerAdmin = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Ender = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Ban = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Netless = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Shadow = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local AntiReport = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local Shadow_2 = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local OpenUTG = Instance.new("TextButton")
+
+--Properties:
+
+UTG_V2.Name = "UTG_V2"
+UTG_V2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UTG_V2.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = UTG_V2
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0592107326, 0, 0.0301492307, 0)
+Main.Size = UDim2.new(0, 451, 0, 534)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))}
+UIGradient.Parent = Main
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Main
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0711524412, 0, -0.00186577276, 0)
+Title.Size = UDim2.new(0, 385, 0, 54)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "ULTIMATE TROLLING GUI V2"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 38.000
+Title.TextWrapped = true
+
+SubTitile.Name = "SubTitile"
+SubTitile.Parent = Title
+SubTitile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubTitile.BackgroundTransparency = 1.000
+SubTitile.Position = UDim2.new(-0.285957217, 0, 0.388888925, 0)
+SubTitile.Size = UDim2.new(0, 611, 0, 54)
+SubTitile.Font = Enum.Font.SourceSans
+SubTitile.Text = "FE UTG is back! And is now V2! Thx for using! :)"
+SubTitile.TextColor3 = Color3.fromRGB(255, 255, 255)
+SubTitile.TextSize = 20.000
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Main
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.Position = UDim2.new(0.0505445786, 0, 0.114676468, 0)
+Welcome.Size = UDim2.new(0, 403, 0, 36)
+Welcome.Font = Enum.Font.SourceSansBold
+Welcome.Text = "Welcome to the brand new FE UTG! Made by Bulkez"
+Welcome.TextColor3 = Color3.fromRGB(0, 0, 0)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextWrapped = true
+
+UICorner_2.Parent = Welcome
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.Position = UDim2.new(0.0527422242, 0, 0.772552848, 0)
+Credits.Size = UDim2.new(0, 405, 0, 44)
+Credits.Font = Enum.Font.SourceSansBold
+Credits.Text = "Made by Blukez also credit to the original script creators also thx FO10 :)"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+UICorner_3.Parent = Credits
+
+OptionListFrame.Name = "OptionListFrame"
+OptionListFrame.Parent = Main
+OptionListFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OptionListFrame.BackgroundTransparency = 1.000
+OptionListFrame.Position = UDim2.new(0.0279720332, 0, 0.191011235, 0)
+OptionListFrame.Size = UDim2.new(0, 403, 0, 711)
+
+OptionList.Name = "OptionList"
+OptionList.Parent = OptionListFrame
+OptionList.Active = true
+OptionList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OptionList.Position = UDim2.new(0.0351866931, 0, 0.00994348992, 0)
+OptionList.Size = UDim2.new(0, 402, 0, 296)
+
+Sonic.Name = "Sonic"
+Sonic.Parent = OptionList
+Sonic.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Sonic.Position = UDim2.new(0.0231197979, 0, 0.00696475245, 0)
+Sonic.Size = UDim2.new(0, 370, 0, 50)
+Sonic.Font = Enum.Font.SourceSans
+Sonic.Text = "Sonic"
+Sonic.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sonic.TextScaled = true
+Sonic.TextSize = 14.000
+Sonic.TextWrapped = true
+
+UICorner_4.Parent = Sonic
+
+Gale.Name = "Gale"
+Gale.Parent = OptionList
+Gale.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Gale.Position = UDim2.new(0.0231197979, 0, 0.0506699458, 0)
+Gale.Size = UDim2.new(0, 370, 0, 50)
+Gale.Font = Enum.Font.SourceSans
+Gale.Text = "Gale"
+Gale.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gale.TextScaled = true
+Gale.TextSize = 14.000
+Gale.TextWrapped = true
+
+UICorner_5.Parent = Gale
+
+Among_Us.Name = "Among_Us"
+Among_Us.Parent = OptionList
+Among_Us.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Among_Us.Position = UDim2.new(0.0231197979, 0, 0.092793569, 0)
+Among_Us.Size = UDim2.new(0, 370, 0, 50)
+Among_Us.Font = Enum.Font.SourceSans
+Among_Us.Text = "Among us"
+Among_Us.TextColor3 = Color3.fromRGB(255, 255, 255)
+Among_Us.TextScaled = true
+Among_Us.TextSize = 14.000
+Among_Us.TextWrapped = true
+
+UICorner_6.Parent = Among_Us
+
+Killbot.Name = "Killbot"
+Killbot.Parent = OptionList
+Killbot.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Killbot.Position = UDim2.new(0.0231197979, 0, 0.1349172, 0)
+Killbot.Size = UDim2.new(0, 370, 0, 50)
+Killbot.Font = Enum.Font.SourceSans
+Killbot.Text = "Killbot"
+Killbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Killbot.TextScaled = true
+Killbot.TextSize = 14.000
+Killbot.TextWrapped = true
+
+UICorner_7.Parent = Killbot
+
+NekoMaid.Name = "NekoMaid"
+NekoMaid.Parent = OptionList
+NekoMaid.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+NekoMaid.Position = UDim2.new(0.0231197979, 0, 0.177534401, 0)
+NekoMaid.Size = UDim2.new(0, 370, 0, 50)
+NekoMaid.Font = Enum.Font.SourceSans
+NekoMaid.Text = "Neko Maid"
+NekoMaid.TextColor3 = Color3.fromRGB(255, 255, 255)
+NekoMaid.TextScaled = true
+NekoMaid.TextSize = 14.000
+NekoMaid.TextWrapped = true
+
+UICorner_8.Parent = NekoMaid
+
+Smug.Name = "Smug"
+Smug.Parent = OptionList
+Smug.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Smug.Position = UDim2.new(0.0231197979, 0, 0.22079052, 0)
+Smug.Size = UDim2.new(0, 370, 0, 50)
+Smug.Font = Enum.Font.SourceSans
+Smug.Text = "Smug Dance V6"
+Smug.TextColor3 = Color3.fromRGB(255, 255, 255)
+Smug.TextScaled = true
+Smug.TextSize = 14.000
+Smug.TextWrapped = true
+
+UICorner_9.Parent = Smug
+
+ShadowBlade.Name = "ShadowBlade"
+ShadowBlade.Parent = OptionList
+ShadowBlade.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ShadowBlade.Position = UDim2.new(0.0231197979, 0, 0.263522238, 0)
+ShadowBlade.Size = UDim2.new(0, 370, 0, 50)
+ShadowBlade.Font = Enum.Font.SourceSans
+ShadowBlade.Text = "Shadow Blade"
+ShadowBlade.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShadowBlade.TextScaled = true
+ShadowBlade.TextSize = 14.000
+ShadowBlade.TextWrapped = true
+
+UICorner_10.Parent = ShadowBlade
+
+SwordStand.Name = "SwordStand"
+SwordStand.Parent = OptionList
+SwordStand.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+SwordStand.Position = UDim2.new(0.0231197979, 0, 0.304071069, 0)
+SwordStand.Size = UDim2.new(0, 370, 0, 50)
+SwordStand.Font = Enum.Font.SourceSans
+SwordStand.Text = "Sword Stand"
+SwordStand.TextColor3 = Color3.fromRGB(255, 255, 255)
+SwordStand.TextScaled = true
+SwordStand.TextSize = 14.000
+SwordStand.TextWrapped = true
+
+UICorner_11.Parent = SwordStand
+
+Neptunion.Name = "Neptunion"
+Neptunion.Parent = OptionList
+Neptunion.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Neptunion.Position = UDim2.new(0.0231197979, 0, 0.347187638, 0)
+Neptunion.Size = UDim2.new(0, 370, 0, 50)
+Neptunion.Font = Enum.Font.SourceSans
+Neptunion.Text = "Neptunion V"
+Neptunion.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neptunion.TextScaled = true
+Neptunion.TextSize = 14.000
+Neptunion.TextWrapped = true
+
+UICorner_12.Parent = Neptunion
+
+RbNeptunion.Name = "RbNeptunion"
+RbNeptunion.Parent = OptionList
+RbNeptunion.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+RbNeptunion.Position = UDim2.new(0.0231197979, 0, 0.390972137, 0)
+RbNeptunion.Size = UDim2.new(0, 370, 0, 50)
+RbNeptunion.Font = Enum.Font.SourceSans
+RbNeptunion.Text = "RB Neptunion"
+RbNeptunion.TextColor3 = Color3.fromRGB(255, 255, 255)
+RbNeptunion.TextScaled = true
+RbNeptunion.TextSize = 14.000
+RbNeptunion.TextWrapped = true
+
+UICorner_13.Parent = RbNeptunion
+
+Wall.Name = "Wall"
+Wall.Parent = OptionList
+Wall.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Wall.Position = UDim2.new(0.0231197979, 0, 0.434192657, 0)
+Wall.Size = UDim2.new(0, 370, 0, 50)
+Wall.Font = Enum.Font.SourceSans
+Wall.Text = "Wall"
+Wall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Wall.TextScaled = true
+Wall.TextSize = 14.000
+Wall.TextWrapped = true
+
+UICorner_14.Parent = Wall
+
+achroGlicher.Name = "achroGlicher"
+achroGlicher.Parent = OptionList
+achroGlicher.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+achroGlicher.Position = UDim2.new(0.0231197979, 0, 0.47801882, 0)
+achroGlicher.Size = UDim2.new(0, 370, 0, 50)
+achroGlicher.Font = Enum.Font.SourceSans
+achroGlicher.Text = "Achromatic Glicher"
+achroGlicher.TextColor3 = Color3.fromRGB(255, 255, 255)
+achroGlicher.TextScaled = true
+achroGlicher.TextSize = 14.000
+achroGlicher.TextWrapped = true
+
+UICorner_15.Parent = achroGlicher
+
+FlamingCube.Name = "FlamingCube"
+FlamingCube.Parent = OptionList
+FlamingCube.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+FlamingCube.Position = UDim2.new(0.0231197979, 0, 0.521497488, 0)
+FlamingCube.Size = UDim2.new(0, 370, 0, 50)
+FlamingCube.Font = Enum.Font.SourceSans
+FlamingCube.Text = "Flaming Cube"
+FlamingCube.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlamingCube.TextScaled = true
+FlamingCube.TextSize = 14.000
+FlamingCube.TextWrapped = true
+
+UICorner_16.Parent = FlamingCube
+
+Spider.Name = "Spider"
+Spider.Parent = OptionList
+Spider.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Spider.Position = UDim2.new(0.0231197979, 0, 0.564180851, 0)
+Spider.Size = UDim2.new(0, 370, 0, 50)
+Spider.Font = Enum.Font.SourceSans
+Spider.Text = "Spider"
+Spider.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spider.TextScaled = true
+Spider.TextSize = 14.000
+Spider.TextWrapped = true
+
+UICorner_17.Parent = Spider
+
+Cop.Name = "Cop"
+Cop.Parent = OptionList
+Cop.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Cop.Position = UDim2.new(0.0231197979, 0, 0.606966078, 0)
+Cop.Size = UDim2.new(0, 370, 0, 50)
+Cop.Font = Enum.Font.SourceSans
+Cop.Text = "Cop"
+Cop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cop.TextScaled = true
+Cop.TextSize = 14.000
+Cop.TextWrapped = true
+
+UICorner_18.Parent = Cop
+
+Chips.Name = "Chips"
+Chips.Parent = OptionList
+Chips.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Chips.Position = UDim2.new(0.0231197979, 0, 0.649766564, 0)
+Chips.Size = UDim2.new(0, 370, 0, 50)
+Chips.Font = Enum.Font.SourceSans
+Chips.Text = "Chips"
+Chips.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chips.TextScaled = true
+Chips.TextSize = 14.000
+Chips.TextWrapped = true
+
+UICorner_19.Parent = Chips
+
+Joy.Name = "Joy"
+Joy.Parent = OptionList
+Joy.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Joy.Position = UDim2.new(0.0231197979, 0, 0.69195044, 0)
+Joy.Size = UDim2.new(0, 370, 0, 50)
+Joy.Font = Enum.Font.SourceSans
+Joy.Text = ":Joy:"
+Joy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Joy.TextScaled = true
+Joy.TextSize = 14.000
+Joy.TextWrapped = true
+
+UICorner_20.Parent = Joy
+
+UMD.Name = "UMD"
+UMD.Parent = OptionList
+UMD.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+UMD.Position = UDim2.new(0.0231197979, 0, 0.732523978, 0)
+UMD.Size = UDim2.new(0, 370, 0, 50)
+UMD.Font = Enum.Font.SourceSans
+UMD.Text = "Ultimate meme dance"
+UMD.TextColor3 = Color3.fromRGB(255, 255, 255)
+UMD.TextScaled = true
+UMD.TextSize = 14.000
+UMD.TextWrapped = true
+
+UICorner_21.Parent = UMD
+
+Chill.Name = "Chill"
+Chill.Parent = OptionList
+Chill.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Chill.Position = UDim2.new(0.0231197979, 0, 0.772394419, 0)
+Chill.Size = UDim2.new(0, 370, 0, 50)
+Chill.Font = Enum.Font.SourceSans
+Chill.Text = "Chill"
+Chill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chill.TextScaled = true
+Chill.TextSize = 14.000
+Chill.TextWrapped = true
+
+UICorner_22.Parent = Chill
+
+Grapple.Name = "Grapple"
+Grapple.Parent = OptionList
+Grapple.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Grapple.Position = UDim2.new(0.0231197979, 0, 0.815179646, 0)
+Grapple.Size = UDim2.new(0, 370, 0, 50)
+Grapple.Font = Enum.Font.SourceSans
+Grapple.Text = "Grapple"
+Grapple.TextColor3 = Color3.fromRGB(255, 255, 255)
+Grapple.TextScaled = true
+Grapple.TextSize = 14.000
+Grapple.TextWrapped = true
+
+UICorner_23.Parent = Grapple
+
+ServerAdmin.Name = "ServerAdmin"
+ServerAdmin.Parent = OptionList
+ServerAdmin.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ServerAdmin.Position = UDim2.new(0.0231197979, 0, 0.858780205, 0)
+ServerAdmin.Size = UDim2.new(0, 370, 0, 50)
+ServerAdmin.Font = Enum.Font.SourceSans
+ServerAdmin.Text = "Server Admin"
+ServerAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+ServerAdmin.TextScaled = true
+ServerAdmin.TextSize = 14.000
+ServerAdmin.TextWrapped = true
+
+UICorner_24.Parent = ServerAdmin
+
+Ender.Name = "Ender"
+Ender.Parent = OptionList
+Ender.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Ender.Position = UDim2.new(0.0231197979, 0, 0.902380705, 0)
+Ender.Size = UDim2.new(0, 370, 0, 50)
+Ender.Font = Enum.Font.SourceSans
+Ender.Text = "Ender"
+Ender.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ender.TextScaled = true
+Ender.TextSize = 14.000
+Ender.TextWrapped = true
+
+UICorner_25.Parent = Ender
+
+Ban.Name = "Ban"
+Ban.Parent = OptionList
+Ban.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Ban.Position = UDim2.new(0.0231197979, 0, 0.945981264, 0)
+Ban.Size = UDim2.new(0, 370, 0, 50)
+Ban.Font = Enum.Font.SourceSans
+Ban.Text = "Ban Hammer"
+Ban.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ban.TextScaled = true
+Ban.TextSize = 14.000
+Ban.TextWrapped = true
+
+UICorner_26.Parent = Ban
+
+Netless.Name = "Netless"
+Netless.Parent = Main
+Netless.BackgroundColor3 = Color3.fromRGB(77, 156, 115)
+Netless.BorderSizePixel = 0
+Netless.Position = UDim2.new(0.51807934, 0, 0.868913829, 0)
+Netless.Size = UDim2.new(0, 195, 0, 57)
+Netless.ZIndex = 2
+Netless.Font = Enum.Font.GothamSemibold
+Netless.Text = ""
+Netless.TextColor3 = Color3.fromRGB(255, 255, 255)
+Netless.TextScaled = true
+Netless.TextSize = 14.000
+Netless.TextWrapped = true
+
+UICorner_27.Parent = Netless
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Netless
+Shadow.BackgroundColor3 = Color3.fromRGB(58, 118, 86)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_28.Parent = Shadow
+
+TextLabel.Parent = Netless
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.49999997, 0)
+TextLabel.Size = UDim2.new(1, -20, 1, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Netless (Use AFTER any scripts)"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+AntiReport.Name = "AntiReport"
+AntiReport.Parent = Main
+AntiReport.BackgroundColor3 = Color3.fromRGB(77, 156, 115)
+AntiReport.BorderSizePixel = 0
+AntiReport.Position = UDim2.new(0.0489794947, 0, 0.868913829, 0)
+AntiReport.Size = UDim2.new(0, 197, 0, 57)
+AntiReport.ZIndex = 2
+AntiReport.Font = Enum.Font.GothamSemibold
+AntiReport.Text = ""
+AntiReport.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiReport.TextScaled = true
+AntiReport.TextSize = 14.000
+AntiReport.TextWrapped = true
+
+UICorner_29.Parent = AntiReport
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = AntiReport
+Shadow_2.BackgroundColor3 = Color3.fromRGB(58, 118, 86)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_30.Parent = Shadow_2
+
+TextLabel_2.Parent = AntiReport
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "AntiReport"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Main
+X.BackgroundColor3 = Color3.fromRGB(251, 98, 92)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.927937925, 0, -0.0262172297, 0)
+X.Size = UDim2.new(0, 47, 0, 45)
+X.ZIndex = 2
+X.Font = Enum.Font.GothamSemibold
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextSize = 32.000
+X.TextWrapped = true
+
+UICorner_31.CornerRadius = UDim.new(1, 0)
+UICorner_31.Parent = X
+
+OpenUTG.Name = "OpenUTG"
+OpenUTG.Parent = UTG_V2
+OpenUTG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenUTG.BackgroundTransparency = 1.000
+OpenUTG.Position = UDim2.new(0.79603678, 0, 0.698529005, 0)
+OpenUTG.Size = UDim2.new(0, 165, 0, 62)
+OpenUTG.Visible = false
+OpenUTG.Font = Enum.Font.SourceSans
+OpenUTG.Text = "Open UTG"
+OpenUTG.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenUTG.TextScaled = true
+OpenUTG.TextSize = 14.000
+OpenUTG.TextWrapped = true
+
+-- Scripts:
+
+local function MBUQEV_fake_script() -- Main.DraggableScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(MBUQEV_fake_script)()
+local function NWAVVF_fake_script() -- Netless.NetlessScript 
+	local script = Instance.new('LocalScript', Netless)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+			if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+				game:GetService("RunService").Heartbeat:connect(function()
+					v.Velocity = Vector3.new(0,35,0)
+					wait(0.5)
+				end)
+			end
+		end
+	
+		game:GetService("StarterGui"):SetCore("SendNotification", { 
+			Title = "Notification";
+			Text = "Netless activated";
+			Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+		Duration = 16;
+	end)
+end
+coroutine.wrap(NWAVVF_fake_script)()
+local function WSBO_fake_script() -- X.CloseUTGScript 
+	local script = Instance.new('LocalScript', X)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.OpenUTG.Visible = true
+	end)
+end
+coroutine.wrap(WSBO_fake_script)()
+local function KZZCO_fake_script() -- OpenUTG.OpenUTGScript 
+	local script = Instance.new('LocalScript', OpenUTG)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Main.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(KZZCO_fake_script)()
+
+AntiReport.MouseButton1Click:Connect(function()
+setfflag("AbuseReportScreenshotPercentage", 0)
+setfflag("DFFlagAbuseReportScreenshot", "False")
+print("Anti-Report loaded")
+end)
+
+Among_Us.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/JXUMavf3", true))()
+end)
+
+Ban.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/killermaster9999mega/thing/main/README.md"))()
+end)
+
+Chill.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+end)
+
+Chips.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/b289ts36"))()
+end)
+
+Cop.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/VAA5Mf60"))()
+end)
+
+Ender.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/bndCgupK"))()
+end)
+
+FlamingCube.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/D7pigANg"))()
+end)
+
+Gale.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/PjJNLaFa"), true))()
+end)
+
+Grapple.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/AyASkDEG"))()
+end)
+
+Joy.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/LEAQuKj0"))()
+end)
+
+Killbot.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/G24tcRXA"))()
+end)
+
+NekoMaid.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://paste.ee/d/6bCwm/0"))()
+end)
+
+Neptunion.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/t0Mkc33N"))()
+end)
+
+RbNeptunion.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/gDi503fB"))()
+end)
+
+ServerAdmin.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+end)
+
+ShadowBlade.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/kMYThpNG"))()
+end)
+
+Smug.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/ZuKy7HFF"))()
+end)
+
+Sonic.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/SyF5t70A"))()
+end)
+
+Spider.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/txsk1LJg"))()
+end)
+
+SwordStand.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://paste.ee/r/NwGVX/0"))()
+end)
+
+UMD.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/0QfjMKrF"))()
+end)
+
+Wall.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/AY6kA2AV"))()
+end)
+
+achroGlicher.MouseButton1Click:Connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/T7cmny7C"))()
+end)

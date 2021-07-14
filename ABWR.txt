@@ -1,0 +1,24 @@
+--[[
+Cream void ball spam made by RatFricker69#0001 to make a video of this please message me for consent
+PRESS/HOLD B WHILE USING CREAM
+--]]
+
+local keypath = Enum.KeyCode
+local KEY = keypath.B
+local player = game:GetService("Players").LocalPlayer
+local uis = game:GetService("UserInputService")
+
+local args = {
+    [1] = false,
+    [2] = false,
+    [3] = false,
+    [4] = false,
+    [5] = false,
+    [6] = true
+}
+local sniperbullet = game:GetService("ReplicatedStorage").Assets.AbilityEvents.Stands.Cream.VoidMode
+while wait(0.05) do
+    if uis:IsKeyDown(KEY) then
+        sniperbullet:FireServer(unpack(args))
+    end
+end
