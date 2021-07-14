@@ -1,0 +1,8 @@
+local fps = 1
+local clock = tick()
+
+while true do
+    while clock + 1/fps > tick() do end
+    wait()
+    clock = tick()
+end

