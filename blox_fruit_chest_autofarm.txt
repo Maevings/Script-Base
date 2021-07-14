@@ -1,0 +1,164 @@
+wait(25)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Toggler = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Start = Instance.new("TextButton")
+local Stop = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+
+--Properties:
+
+Toggler.Name = "Toggler"
+Toggler.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Toggler.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Toggler
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.750
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.153387934, 0, 0.253121614, 0)
+Frame.Size = UDim2.new(0, 121, 0, 59)
+
+Start.Name = "Start"
+Start.Parent = Frame
+Start.Active = false
+Start.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Start.BackgroundTransparency = 1.000
+Start.Position = UDim2.new(0, 0, 0.160232022, 0)
+Start.Size = UDim2.new(0, 122, 0, 22)
+Start.Font = Enum.Font.SourceSans
+Start.Text = "Start Chest Farm"
+Start.TextColor3 = Color3.fromRGB(0, 0, 0)
+Start.TextSize = 14.000
+
+Stop.Name = "Stop"
+Stop.Parent = Frame
+Stop.Active = false
+Stop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stop.BackgroundTransparency = 1.000
+Stop.Position = UDim2.new(0, 0, 0.557090104, 0)
+Stop.Size = UDim2.new(0, 123, 0, 22)
+Stop.Font = Enum.Font.SourceSans
+Stop.Text = "Stop Chest Farm"
+Stop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stop.TextSize = 14.000
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BackgroundTransparency = 0.850
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.00403132197, 0, -0.0729639083, 0)
+Frame_2.Size = UDim2.new(0, 122, 0, 13)
+
+-- Scripts:
+
+local function JJAX_fake_script() -- Start.Start 
+	local script = Instance.new('LocalScript', Start)
+
+	script.Parent.MouseButton1Click:connect(function()
+	_G.d = true
+		local d = game.workspace
+	if game.PlaceId == 4442272183 then
+		game.ReplicatedStorage.Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
+	wait(1)
+		while _G.d and wait() do
+			local collected = 0
+			for i,d in pairs(game:GetService("Workspace"):GetChildren()) do
+				if string.find(d.Name, "Chest") ~= nil then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = d.CFrame
+					collected = collected + 1
+				end end
+			if collected == 0 then game:GetService("TeleportService"):Teleport(2753915549, game:GetService("Players").LocalPlayer)
+			end
+		end
+		else
+		print('not place id')
+		end
+		end)
+end
+coroutine.wrap(JJAX_fake_script)()
+local function RIDKWF_fake_script() -- Stop.Stop 
+	local script = Instance.new('LocalScript', Stop)
+
+	script.Parent.MouseButton1Click:connect(function()
+		_G.d = false
+		local d = game.workspace
+	if game.PlaceId == 4442272183 then
+		game.ReplicatedStorage.Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
+	wait(1)
+		while _G.d and wait() do
+			local collected = 0
+			for i,d in pairs(game:GetService("Workspace"):GetChildren()) do
+				if string.find(d.Name, "Chest") ~= nil then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = d.CFrame
+					collected = collected + 1
+				end end
+			if collected == 0 then game:GetService("TeleportService"):Teleport(2753915549, game:GetService("Players").LocalPlayer)
+			end
+		end
+		else
+			print('not place id')
+		end
+	end)
+end
+coroutine.wrap(RIDKWF_fake_script)()
+local function SPAGI_fake_script() -- Frame.Keybind 
+	local script = Instance.new('LocalScript', Frame)
+
+	--locals
+	local UserInputService = game:GetService("UserInputService")
+	
+	
+	
+	--script
+	function onInputBegan(input, gameProcessed)
+		if input.UserInputType == Enum.UserInputType.Keyboard then
+			if input.KeyCode == Enum.KeyCode.LeftAlt then
+				if script.Parent.Visible == false then
+					script.Parent.Visible = true
+				else
+					script.Parent.Visible = false
+				end
+			end
+		end
+	end
+	
+	
+	--start
+	UserInputService.InputBegan:connect(onInputBegan)
+end
+coroutine.wrap(SPAGI_fake_script)()
+local function TQQGA_fake_script() -- Toggler.LocalScript 
+	local script = Instance.new('LocalScript', Toggler)
+
+	for _,v in ipairs(script.Parent:GetDescendants()) do
+		if not v:IsA("LocalScript") then
+			v.Draggable = true
+		end
+	end
+end
+coroutine.wrap(TQQGA_fake_script)()
+	_G.d = true
+		local d = game.workspace
+	if game.PlaceId == 4442272183 then
+		game.ReplicatedStorage.Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
+	wait(1)
+		while _G.d and wait() do
+			local collected = 0
+			for i,d in pairs(game:GetService("Workspace"):GetChildren()) do
+				if string.find(d.Name, "Chest") ~= nil then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = d.CFrame
+					collected = collected + 1
+				end end
+			if collected == 0 then game:GetService("TeleportService"):Teleport(2753915549, game:GetService("Players").LocalPlayer)
+			end
+		end
+		else
+		print('not place id')
+		end
+

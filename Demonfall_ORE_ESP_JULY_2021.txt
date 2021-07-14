@@ -1,0 +1,45 @@
+getgenv().esp = true -- toggle
+
+local Camera = workspace.CurrentCamera
+local LocalPlayer = game:GetService("Players").LocalPlayer
+
+local function esp(instance)
+   local Text = Drawing.new("Text")
+   Text.Visible = false
+   Text.Center = true
+   Text.Outline = true
+   Text.Font = 2
+   Text.Size = 14
+   Text.Color = Color3.fromRGB(255, 180, 0)
+
+   local function update()
+       local renderstepped
+       renderstepped = game:GetService("RunService").RenderStepped:Connect(function()
+           if instance and instance:FindFirstChild("Spawned") then
+               local magnitude = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - instance.Position).Magnitude
+               local Vector, Screen = Camera:WorldToViewportPoint(instance.Position)
+
+               if getgenv().esp and Screen then
+                   Text.Position = Vector2.new(Vector.X, Vector.Y)
+                   Text.Visible = true
+                   Text.Text = "Ore   " .. tostring(math.floor(magnitude))
+               else
+                   Text.Visible = false
+               end
+
+           elseif instance:FindFirstChild("Spawned") == nil then
+               Text:Remove()
+               renderstepped:disconnect()
+           end
+       end)
+   end
+
+   update()
+end
+
+
+for _, v in next, game.workspace.Map.Minerals:GetDescendants() do
+   if v.Name == "Spawn" then
+       esp(v)
+   end
+end

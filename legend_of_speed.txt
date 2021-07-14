@@ -1,0 +1,1 @@
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ALT-prog/8P5UjQkCK2fZGIt4B05J-JoM6XeTrHMXjVczm6ceg-CfeACsSMBHN8uMiJEbar-WqouZGQl7Sqsw8yk0ZxE-kukWqY2lcoIpNUxm/main/Loader_V3_CKc1WEbAqaNEYxEMRuIT%20jcMbSBdu5ZbrPdDPjTN9%20HUHOhBV4qQwQlnCY49W6.lua",true))()

@@ -1,0 +1,9 @@
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+    local result, country = pcall(function()
+        return game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(Player)
+    end
+    
+    if result and country == "CN" then
+        Player:Kick("sorry homie, but i like my freedom!")
+    end
+end)

@@ -1,0 +1,350 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Maxgat5/UiLib/main/lua')))()
+local w = library:CreateWindow("YouTube Simulator")
+local b = w:CreateFolder("AutoFarm")
+local f = w:CreateFolder("AutoBuy")
+local g = w:CreateFolder("Teleports")
+local e = w:CreateFolder("Mix")
+local u = w:CreateFolder("Credits")
+
+b:Toggle("AutoClick",function(bool)
+    shared.toggle = bool
+    AutoClick = bool
+end)
+
+b:Toggle("AutoEdit",function(bool)
+    shared.toggle = bool
+    AutoEdit = bool
+end)
+
+
+g:Button("ItemShop",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2750.9807128906, 69.07901763916, 35.271595001221)
+end)
+
+g:Button("Upgrades",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2868.0866699219, 69.021705627441, -77.985702514648)
+end)
+
+g:Button("Youre Moms House",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2998.013671875, 69.484764099121, 25.384323120117)
+end)
+
+g:Button("Mid",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2871.8999023438, 75.167869567871, 54.409130096436)
+end)
+
+g:Button("Music",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2996.4787597656, 72.583572387695, 182.20782470703)
+end)
+
+g:Button("Youre Dads House",function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-2738.0161132813, 135.03875732422, -247.67263793945)
+end)
+
+g:Button("Bathrooms",function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-2634.5095214844, 110.14139556885, -178.4030456543)
+end)
+
+g:Button("Studio",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2895.6655273438, 70.483512878418, 171.11712646484)
+end)
+
+g:Button("Heaven",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-124.88877868652, 4.1226739883423, 565.00897216797)
+end)
+
+e:Button("Noclip E",function()
+    noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+
+if key == "e" then
+noclip = not noclip
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+print('Loaded')
+print('Press "E" to noclip')
+end)
+
+
+e:Button("Inf Jump F",function()
+    -- //~ F to toggle ~\ --
+_G.infinjump = true
+ 
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+Mouse.KeyDown:connect(function(k)
+if _G.infinjump then
+if k:byte() == 32 then
+Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+Humanoid:ChangeState("Jumping")
+wait(0.1)
+Humanoid:ChangeState("Seated")
+end
+end
+end)
+ 
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+Mouse.KeyDown:connect(function(k)
+k = k:lower()
+if k == "f" then
+if _G.infinjump == true then
+_G.infinjump = false
+else
+_G.infinjump = true
+end
+end
+end)
+end)
+
+
+e:Button("Speed",function()
+    game.Workspace.elmorroverde4.Humanoid.WalkSpeed = 50
+end)
+
+
+f:Button("Camera Best",function()
+    game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.sunburst.Visible = false
+    Money = game:GetService("Players").LocalPlayer.Money.Value
+    CamerasPrices = {}
+    for i,v in pairs(game:GetService("Workspace").Cameras:GetChildren()) do
+        if v.ClassName == "Model" then
+            if v.colorPart.BrickColor == BrickColor.new('Persimmon') then
+                fireclickdetector(v.colorPart.ClickDetector, 0)
+                fireclickdetector(v.colorPart.ClickDetector, 1)
+                wait(.5)
+                a = string.gsub(game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.Frame.Buy.Price.Text,",","")
+                if not table.find(CamerasPrices,a) then
+                    table.insert(CamerasPrices,a)
+                end
+                wait(.5)
+                firesignal(game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.Frame.Close.MouseButton1Click)
+            end
+        end
+    end
+    local number = game:GetService("Players").LocalPlayer.Money.Value
+    local closest = CamerasPrices[1] 
+    for i, currentNum in pairs(CamerasPrices) do
+    	local currentDiff, closestDiff = math.abs(currentNum - number), math.abs(closest - number)
+    	if currentDiff < closestDiff then
+    		closest = currentNum
+    	end
+    end
+    wait(1)
+    for i,v in pairs(game:GetService("Workspace").Cameras:GetChildren()) do
+        if v.ClassName == "Model" then
+            if v.colorPart.BrickColor == BrickColor.new('Persimmon') then
+                fireclickdetector(v.colorPart.ClickDetector, 0)
+                fireclickdetector(v.colorPart.ClickDetector, 1)
+                wait(.5)
+                a = string.gsub(game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.Frame.Buy.Price.Text,",","")
+                if tonumber(a) == tonumber(closest) then
+                    if tonumber(closest) >= tonumber(game:GetService("Players").LocalPlayer.Money.Value) then
+                        local CoreGui = game:GetService("StarterGui")
+                        CoreGui:SetCore("SendNotification", {
+                        	Title = "Maxgat5";
+                        	Text = "My Smart System Detected That You Need "..closest.." More Money To Buy The Next Camera";
+                        	Duration = 30;
+                        })
+                        CoreGui:SetCore("SendNotification", {
+                        	Title = "How The System Works?";
+                        	Text = "It's Takes Your Money And The Price Of The Items And Checks The Closest Number Between Both Numbers.";
+                        	Duration = 30;
+                        })
+                    end
+                    print(closest)
+                    firesignal(game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.Frame.Buy.MouseButton1Click)
+                    wait(.5)
+                end
+                wait(.5)
+                firesignal(game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.Frame.Close.MouseButton1Click)
+            end
+        end
+    end
+    wait(1)
+    firesignal(game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.Frame.Close.MouseButton1Click)
+end)
+
+f:Button("Camera All",function()
+    game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.sunburst.Visible = false
+    for i,v in pairs(game:GetService("Workspace").Cameras:GetChildren()) do
+        if v.ClassName == "Model" then
+            if v.colorPart.BrickColor == BrickColor.new('Persimmon') then
+                fireclickdetector(v.colorPart.ClickDetector, 0)
+                fireclickdetector(v.colorPart.ClickDetector, 1)
+                wait(.5)
+                firesignal(game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.Frame.Buy.MouseButton1Click)
+            end
+        end
+    end
+    wait(1)
+    firesignal(game:GetService("Players").LocalPlayer.PlayerGui.cameraPopup.Frame.Close.MouseButton1Click)
+end)
+    
+f:Button("Computer All",function()
+    game:GetService("Players").LocalPlayer.PlayerGui.computerPopup.sunburst.Visible = false
+    for i,v in pairs(game:GetService("Workspace").Computers:GetChildren()) do
+        if v.ClassName == "Model" then
+            if v.colorPart.BrickColor == BrickColor.new('Persimmon') then
+                fireclickdetector(v.colorPart.ClickDetector, 0)
+                fireclickdetector(v.colorPart.ClickDetector, 1)
+                wait(.5)
+                firesignal(game:GetService("Players").LocalPlayer.PlayerGui.computerPopup.Frame.Buy.MouseButton1Click)
+            end
+        end
+    end
+    wait(1)
+    firesignal(game:GetService("Players").LocalPlayer.PlayerGui.computerPopup.Frame.Close.MouseButton1Click)
+end)
+
+f:Button("SD Card All",function()
+    game:GetService("ReplicatedStorage").buySD2:FireServer(game:GetService("Players").LocalPlayer.Money.Value)
+end)
+
+f:Button("SD Card Half",function()
+    game:GetService("ReplicatedStorage").buySD2:FireServer(math.floor(game:GetService("Players").LocalPlayer.Money.Value/2))
+end)
+
+e:Button("GetCodes",function()
+local args = {
+    [1] = "OBESE"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+
+local args = {
+    [1] = "DOUBLEJUMP"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+
+local args = {
+    [1] = "FREEGREEN"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+
+local args = {
+    [1] = "FREERED"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+
+local args = {
+    [1] = "Milk"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+
+local args = {
+    [1] = "ROOBYBUTTON"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+
+local args = {
+    [1] = "Spongeb0b"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+
+local args = {
+    [1] = "gun"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+
+local args = {
+    [1] = "minigun"
+}
+
+game:GetService("ReplicatedStorage").Code:FireServer(unpack(args))
+end)
+
+--Credits
+u:Button("maxgat5#8395",function()
+    setclipboard("maxgat5#8395")
+end)
+
+u:Button("eixotic07#2313",function()
+    setclipboard("eixotic07#2313")
+end)
+ 
+u:Button("Discord Server",function()
+    setclipboard("https://discord.gg/K4txdRSVfq")
+end)
+
+pcall(function()
+    game:GetService("Players").LocalPlayer.PlayerGui.SDfull:Destroy()
+end)
+
+while wait() do
+    spawn(function()
+        if AutoClick == true then
+            local tool = game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool") or game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(tool)
+            tool:Activate()
+            game:GetService("ReplicatedStorage").fileMade:FireServer()
+        end
+    end)
+    
+    spawn(function()
+        if AutoEdit == true then
+            bruh1 = {}
+            for i,v in pairs(workspace.Studios[game.Players.LocalPlayer.Name .."'s Studio"].Items:GetChildren()) do
+                for i,v1 in pairs(v:GetChildren()) do
+                    if v1.ClassName == "NumberValue" then
+                        if v1.Name == "Keyboard" then
+                            if not table.find(bruh1,tonumber(v1.Value)) then
+                                table.insert(bruh1,tonumber(v1.Value))
+                            end
+                        end
+                    end
+                end
+            end
+            for i,v in pairs(workspace.Studios[game.Players.LocalPlayer.Name .."'s Studio"].Items:GetChildren()) do
+                for i,v1 in pairs(v:GetChildren()) do
+                    if v1.ClassName == "NumberValue" then
+                        if v1.Name == "Keyboard" then
+                            if v1.Value == math.max(unpack(bruh1)) then
+                                spawn(function()
+                                    game:GetService("ReplicatedStorage").singleVideo:FireServer(v1.Parent)
+                                end)
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end)
+    
+    spawn(function()
+        if AutoEdit == true then
+            for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.popsCash:GetChildren()) do
+                if v.ClassName == "Frame" then
+                    spawn(function()
+                        if AutoEdit == true then
+                            v:Destroy()
+                        end
+                    end)
+                end
+            end
+        end
+    end)
+
+    spawn(function()
+        if AntiAfk == true then
+            local bb=game:service'VirtualUser'
+            bb:CaptureController()
+            bb:ClickButton2(Vector2.new())
+        end
+    end)
+end

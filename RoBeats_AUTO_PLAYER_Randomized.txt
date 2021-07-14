@@ -1,0 +1,93 @@
+--[[
+VERSION: 1222 - new
+
+35808 - perfect
+89271 - great
+21405 - okay
+]]
+
+if game.PlaceVersion < 1222 then
+  game:GetService("Players").LocalPlayer:Kick("Outdated RoBeats Version")
+end
+
+local HitRandomizer = {35808, 35808, 35808, 89271}
+local HitType = HitRandomizer[math.random(1,#HitRandomizer)]
+
+--[[
+Perfect Chance: 75%
+Great Chance: 25%
+]]
+
+local RobeatsGame
+local LuaReg = debug.getregistry()
+
+local toMatch = {
+  "update", "get_time_since_any_pressed", "post_update",
+  "early_quit", "get_frame_count", "start_game"
+}
+
+local function MultiMatch(T1, T2)
+  local MatchCount = 0;
+  for t,k in next, T1 do
+    for i,v in next, T2 do
+      if k == v then
+        MatchCount = MatchCount + 1
+      end
+    end
+  end
+  return MatchCount == #T2
+end
+
+for i,v in next, LuaReg do
+  if type(v) == "table" and rawget(v, "new") and islclosure(v.new) then
+    local Constants = getconstants( v.new )
+    if MultiMatch(Constants, toMatch) then
+      RobeatsGame = v
+      break;
+    end
+  end
+end
+
+local Lobby
+local LobbyManager
+
+local startGame = RobeatsGame.new
+RobeatsGame.new = function(...)
+  Lobby = startGame(...)
+  LobbyManager = getupvalue(Lobby.update, 5)
+  return Lobby
+end
+
+repeat wait() until Lobby and LobbyManager
+
+game:GetService("RunService").RenderStepped:Connect(function(deltaTime)
+  local TrackSystem
+  if getupvalue(Lobby._7mQs3I8clJlHGVzZGUuA, 1) then
+    TrackSystem = Lobby:_7mQs3I8clJlHGVzZGUuA()
+  end
+  if TrackSystem then
+    local NoteHandler = getupvalue(TrackSystem._JtvDC2BJ1rvULzA0YIP7, 1)
+    for NoteID = 1, NoteHandler:count() do
+      local Note = NoteHandler:get(NoteID)
+      local TrackIdx = Note:get_track_index()
+
+      local can_hit, hit_result, h_data = Note:_NyEdadU8Luk834hNtZMF()
+      local can_release, release_result, r_data = Note:_dkCnzV01EXfjPLQtjO6k()
+
+      if can_release and release_result == HitType then
+        TrackSystem:_yNIBuvklZnfq8lGcWJT1(LobbyManager, TrackIdx)
+      elseif can_hit and hit_result == HitType then
+        TrackSystem:_07ewvOVauZ65snv85wVj(LobbyManager, TrackIdx)
+        if #getconstants(Note._dkCnzV01EXfjPLQtjO6k) < 3 then
+          TrackSystem:_yNIBuvklZnfq8lGcWJT1(LobbyManager, TrackIdx)
+        end
+      end
+    end
+  end
+end)
+
+while true do
+    HitType = HitRandomizer[math.random(1,#HitRandomizer)]
+    wait(0.4)
+    --Randomizes Every 0.4 Seconds--
+end
