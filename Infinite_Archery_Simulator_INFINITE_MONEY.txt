@@ -1,0 +1,1 @@
+game:GetService("ReplicatedStorage").Coins.PickUpCoin:FireServer(999999999999)

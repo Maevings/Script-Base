@@ -1,0 +1,5 @@
+-- BarrierRemover
+
+loadstring(game:HttpGet("https://pastebin.com/raw/HqFgVGXn", true))()
+-- This line above will load in the main UI and allow you to choose a game to remove
+-- barriers from.

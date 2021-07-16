@@ -1,0 +1,1 @@
+--made by danielolocal v1 = 100 --Amount here, paste in any amount, if ur cash goes negative dont worry. it will return to 0 cash instantly.local event = game:GetService("ReplicatedStorage").dropMoneyevent:FireServer(v1)

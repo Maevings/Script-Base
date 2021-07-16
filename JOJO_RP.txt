@@ -1,0 +1,7 @@
+for i,v in pairs(game.Workspace:GetDescendants()) do
+local v1 = v
+local event = game:GetService("ReplicatedStorage").laser
+event:FireServer(v1)
+end
+--made by danielo
+--execute it 12 to 5 times make sure to say something dramatic or like epic before executing for effect, not needed btw
