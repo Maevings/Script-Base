@@ -1,0 +1,1 @@
+settings().Physics.AreOwnersShown = true
