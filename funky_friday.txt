@@ -1,0 +1,95 @@
+accuracy = 97.75 -- Set to 94.6 for a more legit play, 97.75 for all Sick
+
+local framework, scrollHandler do
+	for _, obj in next, getgc(true) do
+		if type(obj) == 'table' and rawget(obj, 'GameUI') then
+			framework = obj;
+			break
+		end	
+	end
+
+	for _, module in next, getloadedmodules() do
+		if module.Name == 'ScrollHandler' then
+			scrollHandler = module;
+			break;
+		end
+	end
+end
+
+local runService = game:GetService('RunService')
+local userInputService = game:GetService('UserInputService')
+
+local fastWait, fastSpawn do
+	function fastWait(t)
+        local d = 0;
+        while d < t do
+            d += runService.RenderStepped:wait()
+        end
+    end
+
+    function fastSpawn(f)
+        coroutine.wrap(f)()
+    end
+end
+
+local function fireSignal(target, signal, ...)
+	syn.set_thread_identity(2)
+	for _, signal in next, getconnections(signal) do
+		if type(signal.Function) == 'function' and islclosure(signal.Function) then
+			local scr = rawget(getfenv(signal.Function), 'script')
+			if scr == target then
+				pcall(signal.Function, ...)
+			end
+		end
+	end
+	syn.set_thread_identity(6)
+end
+
+local map = { [0] = 'Left', [1] = 'Down', [2] = 'Up', [3] = 'Right', }
+local keys = { Up = Enum.KeyCode.W; Down = Enum.KeyCode.S; Left = Enum.KeyCode.A; Right = Enum.KeyCode.D; }
+local marked = {}
+
+if shared._id then
+	pcall(runService.UnbindFromRenderStep, runService, shared._id)
+end
+
+shared._id = game:GetService('HttpService'):GenerateGUID(false)
+runService:BindToRenderStep(shared._id, 1, function()
+	for _, arrow in next, framework.UI.ActiveSections do
+		if (arrow.Side == framework.UI.CurrentSide) and (not marked[arrow]) then 
+			local indice = (arrow.Data.Position % 4)
+			local position = map[indice]
+
+			if (position) then
+				local currentTime = framework.SongPlayer.CurrentlyPlaying.TimePosition
+				local distance = (1 - math.abs(arrow.Data.Time - currentTime)) * 100
+
+				if distance >= accuracy then
+				    if currentTime >= 0.00000000000000000000000000000000001 then
+					    marked[arrow] = true;
+					    fireSignal(scrollHandler, userInputService.InputBegan, { KeyCode = keys[position], UserInputType = Enum.UserInputType.Keyboard }, false)
+
+					    if arrow.Data.Length > 0 then
+					        if arrow.Data.Length >= 0.75 then
+					    	    fastWait(arrow.Data.Length - 0.1)
+					        else if arrow.Data.Length >= 0.25 then
+					    	    fastWait(arrow.Data.Length - 0.05)
+					    	else if arrow.Data.Length >= 0.2 then
+					    	    fastWait(arrow.Data.Length - 0.03)
+					        else
+					            fastWait(arrow.Data.Length)
+					            end
+					        end
+		                end
+					    else
+					    	fastWait(0.0000000000000000000000001)
+					    end
+
+					    fireSignal(scrollHandler, userInputService.InputEnded, { KeyCode = keys[position], UserInputType = Enum.UserInputType.Keyboard }, false)
+					    marked[arrow] = false;
+				    end
+				end
+			end
+		end
+	end
+end)

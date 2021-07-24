@@ -1,0 +1,6 @@
+--credit: danielo (me) fiusen#4281 for telling me the findfirstchild B))
+for i,v in pairs(game.Players:GetPlayers()) do
+local v1 = "text here."
+local event = v.Character:FindFirstChild("ServerHandler", true)
+event:FireServer(v1)
+end

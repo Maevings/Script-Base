@@ -1,0 +1,313 @@
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+Text = "Script remade by Axeyaboy";
+Color = Color3.new(0, 0, 0);
+Font = Enum.Font.SourceSansBold;
+FontSize = Enum.FontSize.Size24;
+})
+ 
+wait(1)
+ 
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+Text = "Enjoy the script and credits go to real devs of this script";
+Color = Color3.new(0, 0, 0);
+Font = Enum.Font.SourceSansBold;
+FontSize = Enum.FontSize.Size24;
+})
+ 
+wait(1)
+ 
+game.StarterGui:SetCore("SendNotification", {
+Title = "loading";
+Text = "wait 3 seonds";
+})
+ 
+wait(3)
+ 
+game.StarterGui:SetCore("SendNotification", {
+Title = "Money gen Loaded";
+Text = "Edited By Axeyaboy";
+})
+wait (5)
+while true do 
+spawn(
+function()
+while wait(0) do
+local number_1 = 350
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 351
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 352
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 353
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 354
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 355
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 356
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 357
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 358
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 359
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 360
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 361
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 362
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 363
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 364
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 373
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+spawn(
+function()
+while wait(0) do
+local number_1 = 365
+local Target = game:GetService("ReplicatedStorage").Connection
+Target:InvokeServer(number_1)
+end
+end
+)
+wait (1)
+print("test") --[[to tell if its working just remove this line if you dont want it]]
+end

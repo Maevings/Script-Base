@@ -1,0 +1,1 @@
+game:GetService("ReplicatedStorage").GiveQuestReward:FireServer("Coins",370000000000000)

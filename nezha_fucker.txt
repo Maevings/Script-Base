@@ -1,0 +1,20 @@
+-- scrip by igz : igz#0001
+-- unapologetically obliterates children in the game
+-- i recommend doing this on an alt because this is very blatant
+
+-- basically spams everyone in the game trades so fast they cant even play
+
+local runService = game:GetService("RunService")
+
+local function tradePlayers()
+    for i,v in pairs(game.Players:GetPlayers()) do
+        if v.Name ~= game.Players.LocalPlayer.Name then
+            game:GetService("ReplicatedStorage").RemoteEvents.ApplyEvent:FireServer(game.Players:FindFirstChild(v.Name))
+        end
+    end
+end
+
+runService.RenderStepped:Connect(function()
+    tradePlayers()
+end)
+

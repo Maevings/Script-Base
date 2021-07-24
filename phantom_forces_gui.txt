@@ -1,0 +1,55 @@
+--Scripts are not mine! I only made the gui.
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local silent = Instance.new("TextButton")
+local esp = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+main.Position = UDim2.new(0.0770833343, 0, 0.742550671, 0)
+main.Size = UDim2.new(0, 260, 0, 162)
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+title.Size = UDim2.new(0, 260, 0, 21)
+title.Font = Enum.Font.SourceSans
+title.Text = "PF GUI"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+silent.Name = "silent"
+silent.Parent = main
+silent.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+silent.Position = UDim2.new(-1.86264515e-09, 0, 0.290123463, 0)
+silent.Size = UDim2.new(0, 100, 0, 50)
+silent.Font = Enum.Font.SourceSans
+silent.Text = "Silent Aim"
+silent.TextColor3 = Color3.fromRGB(255, 255, 255)
+silent.TextSize = 14.000
+silent.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/rvC0jJPp", true)) ()
+end)
+
+esp.Name = "esp"
+esp.Parent = main
+esp.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+esp.Position = UDim2.new(0.615384579, 0, 0.290123463, 0)
+esp.Size = UDim2.new(0, 100, 0, 50)
+esp.Font = Enum.Font.SourceSans
+esp.Text = "ESP"
+esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+esp.TextSize = 14.000
+esp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/BUZiqqs0"))()
+end)

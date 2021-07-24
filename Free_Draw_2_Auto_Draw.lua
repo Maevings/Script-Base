@@ -208,13 +208,15 @@ for Y = 1, png.Height do
 	for X = 1, png.Width do
 	    local color, alpha = png:GetPixel(X,Y)
 	    local PixelNum = THICK
-	    PixelTable = {}
-	    PixelTable[#PixelTable+1] = Vector2.new((1+(THICK*((X)-1)))+pos.X,(1+(THICK*((Y)-1)))+pos.Z)
-	    PixelTable[#PixelTable+1] = Vector2.new((1+(THICK*((X)-1)))+pos.X,(1+(THICK*((Y)-1)))+pos.Z+PixelNum)
-	    InfoTables[#InfoTables+1] = {
-            ["PixelTable"] = PixelTable,
-            ["Color"] = color
-        }
+	    if color ~= Color3.new(1, 1, 1) then
+	        PixelTable = {}
+	        PixelTable[#PixelTable+1] = Vector2.new((1+(THICK*((X)-1)))+pos.X,(1+(THICK*((Y)-1)))+pos.Z)
+	        PixelTable[#PixelTable+1] = Vector2.new((1+(THICK*((X)-1)))+pos.X,(1+(THICK*((Y)-1)))+pos.Z+PixelNum)
+	        InfoTables[#InfoTables+1] = {
+                ["PixelTable"] = PixelTable,
+                ["Color"] = color
+            }
+        end
 	end
 end
 
@@ -256,6 +258,7 @@ for i,InfoTable in pairs(InfoTables) do
     local LineCount
     local OldLineCount = #(LayerCollector:GetChildren())
     local RepeatedCount = 0
+    local ReTryCount = 0
     repeat
         wait()
         LineCount = #(LayerCollector:GetChildren())
@@ -263,8 +266,10 @@ for i,InfoTable in pairs(InfoTables) do
         if RepeatedCount > 10 then
             RepeatedCount = 0
             local n = math.random(1,100)
-            if n <= 25 then
+            if n <= 10 then
                 game:GetService("ReplicatedStorage").packages.Net._NetManaged.createLine:FireServer(ohString1, ohTable2)
+                ReTryCount = ReTryCount + 1
+                print("Re-Try of Sending Event Number " .. ReTryCount)
             end
         end
         RepeatedCount = RepeatedCount+1

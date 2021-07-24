@@ -1,0 +1,10 @@
+local meta = getrawmetatable(game);
+local old  = meta.__index;
+
+setreadonly(meta,false);
+meta.__index = function(self, index, ...)
+   if tostring(self) == 'stamina' and index == 'Value' then
+       return 2^31;
+   end
+   return old(self, index, ...);
+end
