@@ -1,0 +1,11 @@
+ 
+local chatbox = game.Players.LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
+local codes = {"!Code 500MV","!Code ANNIVERSARY-2","!Code HNY2020","!Code 1M FAVS","!Code Sub2КоПанда","!Code Sub2EDITTY","!Code Sub2GoldenOwl","!Code Sub22KMz","!Code Sub2OrdinaryPotato","!Code Sub2Praveen","!Code Sub2Roball","!Code Sub2Sagee4","!Code Sub2Sky1Ms","!Code Sub2xAomSakarin"}
+for i,v in pairs(codes) do
+   wait(2.5)
+   chatbox.Text = v
+
+   for i,v in pairs(getconnections(chatbox.FocusLost)) do
+      v.Function(true)
+   end
+end

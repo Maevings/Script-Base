@@ -1,0 +1,11 @@
+-- credits Cherxz#1337
+
+_G.autoClicker = true;
+
+
+
+while _G.autoClicker == true do
+  local args = {[1] = 1}
+  game.ReplicatedStorage.Events.ClientClick:FireServer(unpack(args))
+  wait(0.0)
+end

@@ -1,0 +1,102 @@
+-- more will be added
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local AnGoodGui = Instance.new("TextButton")
+local NoClipN = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Aimbot = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 213, 236)
+Main.BorderSizePixel = 5
+Main.Position = UDim2.new(-0.00880704913, 0, 0.387730062, 0)
+Main.Size = UDim2.new(0, 130, 0, 474)
+Main.Active = true
+Main.Draggable = false
+
+AnGoodGui.Name = "An Good Gui"
+AnGoodGui.Parent = Main
+AnGoodGui.BackgroundColor3 = Color3.fromRGB(255, 213, 236)
+AnGoodGui.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AnGoodGui.BorderSizePixel = 0
+AnGoodGui.Position = UDim2.new(0.084615387, 0, 0.139641732, 0)
+AnGoodGui.Size = UDim2.new(0, 119, 0, 50)
+AnGoodGui.Font = Enum.Font.PatrickHand
+AnGoodGui.Text = "Good gui"
+AnGoodGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+AnGoodGui.TextScaled = true
+AnGoodGui.TextSize = 14.000
+AnGoodGui.TextWrapped = true
+AnGoodGui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+end)
+
+NoClipN.Name = "NoClip (N)"
+NoClipN.Parent = Main
+NoClipN.BackgroundColor3 = Color3.fromRGB(255, 213, 236)
+NoClipN.BorderSizePixel = 0
+NoClipN.Position = UDim2.new(0.084615387, 0, 0.296334535, 0)
+NoClipN.Size = UDim2.new(0, 119, 0, 50)
+NoClipN.Font = Enum.Font.PatrickHand
+NoClipN.Text = "NoClip(N)"
+NoClipN.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoClipN.TextScaled = true
+NoClipN.TextSize = 14.000
+NoClipN.TextWrapped = true
+NoClipN.MouseButton1Down:connect(function()
+	local Player = game.Players.LocalPlayer
+	local Mouse  = Player:GetMouse();
+
+	Mouse.KeyDown:connect(function(key)
+		if key == "n" then
+			local plr = game:GetService("Players")local Z=game:GetService("Players").LocalPlayer;function Torso(plr)if plr.Character then if plr.Character:FindFirstChild('UpperTorso')then return plr.Character.UpperTorso else return plr.Character.Torso end end end;if Clip==true then Clip=false;return end;Clip=true;game:GetService("RunService").Stepped:connect(function()Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)Z.Character.RightFoot.Touched:connect(function(_)Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)Z.Character.LeftFoot.Touched:connect(function(a0)Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)Z.Character.RightLowerLeg.Touched:connect(function(a1)Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)Z.Character.LeftLowerLeg.Touched:connect(function(a2)Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)Z.Character.RightHand.Touched:connect(function(a3)Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)Z.Character.LeftHand.Touched:connect(function(a4)Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)Z.Character.Head.Touched:connect(function(a5)Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)Z.Character.Torso.Touched:connect(function(a6)Torso(Z).CanCollide=not Clip;Z.Character.Head.CanCollide=not Clip;Z.Character.HumanoidRootPart.CanCollide=not Clip;if Z.Character.UpperTorso then Z.Character.LowerTorso.CanCollide=not Clip end end)
+		end
+	end)
+end)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.BorderSizePixel = 4
+TextLabel.Position = UDim2.new(-0.00960768387, 0, 0.0378193855, 0)
+TextLabel.Size = UDim2.new(0, 131, 0, 20)
+TextLabel.Font = Enum.Font.Jura
+TextLabel.Text = "Gahjee Hub"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Main
+Aimbot.BackgroundColor3 = Color3.fromRGB(255, 213, 236)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0.0923077241, 0, 0.464135021, 0)
+Aimbot.Size = UDim2.new(0, 118, 0, 50)
+Aimbot.Font = Enum.Font.PatrickHand
+Aimbot.Text = "Aimbot (dont use in god)"
+Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14.000
+Aimbot.TextWrapped = true
+Aimbot.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/wfwf/main/aimbot"))()
+end)
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 213, 236)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.100000031, 0, 0.616033733, 0)
+TextLabel_2.Size = UDim2.new(0, 117, 0, 56)
+TextLabel_2.Font = Enum.Font.TitilliumWeb
+TextLabel_2.Text = "More will be  added soon... Made by Itsbussinthough#7880"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true

@@ -1,0 +1,36 @@
+-- Note :  put this in your autoexec folder - ur auto attach must be enabled - in case your krn stuck in auto attach just make sure to attach once when the game starts! - this is item hopper - do not press anything while the script is in process
+-- do not use any item you got for example lucky arrow until you disable the script
+_G.Min = 12-- min players
+_G.Max = 14-- max players
+getgenv().TimeBeforeHop = 120; -- time before hopping
+
+getgenv().farming = {
+   ["Rokakaka"] = true,
+   ["Gold Coin"] = true,
+   ["Mysterious Arrow"] = true,
+   ["Diamond"] = true,
+   ["Lucky Arrow"] = true,
+   ["Zepellin's Headband"] = true,
+   ["Quinton's Glove"] = true,
+   ["Ancient Scroll"] = true,
+   ["DEO's Diary"] = true,
+   ["Steel Ball"] = true,
+   ["Rib Cage of The Saint's Corpse"] = true,
+   ["Pure Rokakaka"] = true,
+   ["Stone Mask"] = true
+}
+getgenv().ItemsToSell = {
+   ["Rokakaka"] = true,
+   ["Gold Coin"] = false,
+   ["Mysterious Arrow"] = true,
+   ["Diamond"] = true,
+   ["Zepellin's Headband"] = true,
+   ["Quinton's Glove"] = true,
+   ["Ancient Scroll"] = true,
+   ["DEO's Diary"] = true,
+   ["Steel Ball"] = true,
+   ["Rib Cage of The Saint's Corpse"] = true,
+   ["Stone Mask"] = true
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SupBabe/Hentai/main/YBARC.lua'))()

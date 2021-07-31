@@ -1,0 +1,53 @@
+_G.auto = true
+_G.gem = true
+_G.rebirth = true
+
+
+
+spawn(function()
+
+    while _G.auto == true do 
+    
+local args = {
+    [1] = "collectOrb",
+    [2] = "Red Orb",
+    [3] = "City"
+}
+
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(unpack(args))
+
+      wait()
+ 
+
+     end
+end)
+
+spawn(function()
+   while _G.gem == true do
+    local args = {
+    [1] = "collectOrb",
+    [2] = "Gem",
+    [3] = "City"
+}
+
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(unpack(args))
+
+     wait()
+     end
+end)
+
+
+
+spawn(function()
+   while _G.rebirth == true do
+
+
+    local args = {
+    [1] = "rebirthRequest"
+}
+
+game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer(unpack(args))
+     
+     wait()
+     end
+end)     

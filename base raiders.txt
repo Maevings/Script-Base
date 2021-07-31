@@ -1,0 +1,351 @@
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Info";
+		Text = "Press L for gun mod";
+		Duration = 10;
+	})
+
+
+
+
+                        
+local ScreenGui = Instance.new("ScreenGui")
+local textbox = Instance.new("TextLabel")
+local _1 = Instance.new("TextButton")
+local _2 = Instance.new("TextButton")
+local _3 = Instance.new("TextButton")
+local _4 = Instance.new("TextButton")
+local _5 = Instance.new("TextButton")
+local _6 = Instance.new("TextButton")
+local textbox2 = Instance.new("TextLabel")
+local main = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local bruh = Instance.new("TextButton")
+local apple = Instance.new("TextButton")
+local banana = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+textbox.Name = "text box"
+textbox.Parent = ScreenGui
+textbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textbox.BackgroundTransparency = 1.000
+textbox.Position = UDim2.new(0.0148619981, 0, 0.471816301, 0)
+textbox.Size = UDim2.new(0, 141, 0, 36)
+textbox.Font = Enum.Font.SourceSans
+textbox.Text = "Base Raiders🔨"
+textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbox.TextSize = 14.000
+
+_1.Name = "1"
+_1.Parent = ScreenGui
+_1.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+_1.Position = UDim2.new(0.0276008546, 0, 0.536534429, 0)
+_1.Size = UDim2.new(0, 104, 0, 28)
+_1.Font = Enum.Font.SourceSans
+_1.Text = "TP White"
+_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1.TextSize = 14.000
+_1.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	wait(3.6)
+	local plr = game:GetService('Players').LocalPlayer.Character
+	plr.HumanoidRootPart.CFrame = CFrame.new(81, 39, -205)
+end)
+
+_2.Name = "2"
+_2.Parent = ScreenGui
+_2.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+_2.Position = UDim2.new(0.0276008546, 0, 0.594989538, 0)
+_2.Size = UDim2.new(0, 104, 0, 28)
+_2.Font = Enum.Font.SourceSans
+_2.Text = "TP Black"
+_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2.TextSize = 14.000
+_2.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	wait(3.6)
+	local plr = game:GetService('Players').LocalPlayer.Character
+	plr.HumanoidRootPart.CFrame = CFrame.new(-204, 40, -25)
+end)
+_3.Name = "3"
+_3.Parent = ScreenGui
+_3.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+_3.Position = UDim2.new(0.0276008546, 0, 0.653444648, 0)
+_3.Size = UDim2.new(0, 104, 0, 28)
+_3.Font = Enum.Font.SourceSans
+_3.Text = "TP Green"
+_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+_3.TextSize = 14.000
+_3.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	wait(3.6)
+	local plr = game:GetService('Players').LocalPlayer.Character
+	plr.HumanoidRootPart.CFrame = CFrame.new(82, 40, 155)
+end)
+
+
+
+_4.Name = "4"
+_4.Parent = ScreenGui
+_4.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+_4.Position = UDim2.new(0.0276008546, 0, 0.711899757, 0)
+_4.Size = UDim2.new(0, 104, 0, 28)
+_4.Font = Enum.Font.SourceSans
+_4.Text = "TP Blue"
+_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+_4.TextSize = 14.000
+_4.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	wait(3.6)
+	local plr = game:GetService('Players').LocalPlayer.Character
+	plr.HumanoidRootPart.CFrame = CFrame.new(-112, 39, 153)
+end)
+
+_5.Name = "5"
+_5.Parent = ScreenGui
+_5.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+_5.Position = UDim2.new(0.0276008546, 0, 0.770354867, 0)
+_5.Size = UDim2.new(0, 104, 0, 28)
+_5.Font = Enum.Font.SourceSans
+_5.Text = "TP Red"
+_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+_5.TextSize = 14.000
+_5.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	wait(3.6)
+	local plr = game:GetService('Players').LocalPlayer.Character
+	plr.HumanoidRootPart.CFrame = CFrame.new(174, 40, -26)
+end)
+
+
+
+_6.Name = "6"
+_6.Parent = ScreenGui
+_6.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+_6.Position = UDim2.new(0.0276008546, 0, 0.828809977, 0)
+_6.Size = UDim2.new(0, 104, 0, 28)
+_6.Font = Enum.Font.SourceSans
+_6.Text = "TP Yellow"
+_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+_6.TextSize = 14.000
+_6.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	wait(3.6)
+	local plr = game:GetService('Players').LocalPlayer.Character
+	plr.HumanoidRootPart.CFrame = CFrame.new(-111, 40, -205)
+end)
+textbox2.Name = "text box2"
+textbox2.Parent = ScreenGui
+textbox2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+textbox2.BackgroundTransparency = 1.000
+textbox2.Position = UDim2.new(0.0074310014, 0, 0.872651398, 0)
+textbox2.Size = UDim2.new(0, 141, 0, 36)
+textbox2.Font = Enum.Font.SourceSans
+textbox2.Text = "boompopo#7935"
+textbox2.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbox2.TextSize = 14.000
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(74, 67, 67)
+main.BackgroundTransparency = 1
+main.Position = UDim2.new(0.00849256944, 0, 0.473903954, 0)
+main.Size = UDim2.new(0, 141, 0, 238)
+
+
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+TextButton.Position = UDim2.new(0.945859849, 0, 0.231732786, 0)
+TextButton.Size = UDim2.new(0, 51, 0, 20)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "MIDDLE"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	wait(3.7)
+	local plr = game:GetService('Players').LocalPlayer.Character
+	plr.HumanoidRootPart.CFrame = CFrame.new(-16, 52, -24)
+	wait(1)
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		
+end)
+
+
+bruh.Name = "bruh"
+bruh.Parent = ScreenGui
+bruh.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+bruh.Position = UDim2.new(0.946, 0,0.273, 0)
+--(0.927813172, 0, 0.273486435, 0)
+bruh.Size = UDim2.new(0, 68, 0, 20)
+bruh.Font = Enum.Font.SourceSans
+bruh.Text = "Delete Traps"
+bruh.TextColor3 = Color3.fromRGB(0, 0, 0)
+bruh.TextSize = 14.000
+bruh.MouseButton1Down:connect(function()
+   for i,v in pairs(game:GetDescendants()) do
+    if v.ClassName == "Part" and v.Name == "Laser" then
+        v:Destroy()
+    end
+end
+   
+   for i,v in pairs(game:GetDescendants()) do
+    if v.ClassName == "Part" and v.Name == "Huuge" then
+        v:Destroy()
+    end
+end
+
+
+
+for i,v in pairs(game:GetDescendants()) do
+    if v.ClassName == "Part" and v.Name == "BANANA" then
+        v:Destroy()
+    end
+end
+
+
+for i,v in pairs(game:GetDescendants()) do
+    if v.ClassName == "Part" and v.Name == "Lava" then
+        v:Destroy()
+    end
+end
+apple.Name = "apple"
+apple.Parent = ScreenGui
+apple.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+apple.Position = UDim2.new(0.945859909, 0, 0.315240085, 0)
+apple.Size = UDim2.new(0, 68, 0, 20)
+apple.Font = Enum.Font.SourceSans
+apple.Text = "SafeSpot"
+apple.TextColor3 = Color3.fromRGB(0, 0, 0)
+apple.TextSize = 14.000
+apple.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	wait(3.6)
+	local plr = game:GetService('Players').LocalPlayer.Character
+	plr.HumanoidRootPart.CFrame = CFrame.new(-14, 428, -75)
+end)
+
+banana.Name = "banana"
+banana.Parent = ScreenGui
+banana.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+banana.Position = UDim2.new(0.945859909, 0, 0.356993735, 0)
+banana.Size = UDim2.new(0, 68, 0, 20)
+banana.Font = Enum.Font.SourceSans
+banana.Text = "gun mod"
+banana.TextColor3 = Color3.fromRGB(0, 0, 0)
+banana.TextSize = 14.000
+
+
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+  if key == "o" then
+local messages = {" im not a hacker you're just bad and your trying to boost your self esteem saying im a hacker but again your just bad",}
+for index, message in ipairs(messages) do
+  wait(.01)
+  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+end
+end
+end)
+end)
+local MainPart = Instance.new("Part")
+
+MainPart.Name = "Malware"
+MainPart.Anchored = true
+MainPart.Parent = game.Workspace
+MainPart.Shape = Enum.PartType.Block
+MainPart.Color = Color3.new(1,1,1)
+MainPart.CFrame = CFrame.new(44, 36, -153)
+MainPart.Transparency = 0
+MainPart.CanCollide = false
+
+local econdPart = Instance.new("Part")
+
+econdPart.Name = "shee"
+econdPart.Anchored = true
+econdPart.Parent = game.Workspace
+econdPart.Shape = Enum.PartType.Block
+econdPart.Color = Color3.new(255,255,0)
+econdPart.CFrame = CFrame.new(-154, 37, 16)
+econdPart.Transparency = 0
+econdPart.CanCollide = false
+
+local Fact = Instance.new("Part")
+
+Fact.Name = "NOT"
+Fact.Anchored = true
+Fact.Parent = game.Workspace
+Fact.Shape = Enum.PartType.Block
+Fact.Color = Color3.new(0,3,0)
+Fact.CFrame = CFrame.new(120, 38, 107)
+Fact.Transparency = 0
+Fact.CanCollide = true
+
+local brud = Instance.new("Part")
+
+brud.Name = "yo"
+brud.Anchored = true
+brud.Parent = game.Workspace
+brud.Shape = Enum.PartType.Block
+brud.Color = Color3.new(0,0,3)
+brud.CFrame = CFrame.new(-69, 37, 105)
+brud.Transparency = 0
+brud.CanCollide = true
+
+local OIN = Instance.new("Part")
+
+OIN.Name = "yh"
+OIN.Anchored = true
+OIN.Parent = game.Workspace
+OIN.Shape = Enum.PartType.Block
+OIN.Color = Color3.new(3,0,0)
+OIN.CFrame = CFrame.new(117, 36, -69)
+OIN.Transparency = 0
+OIN.CanCollide = true
+
+local ATLAN = Instance.new("Part")
+
+ATLAN.Anchored = true
+ATLAN.Parent = game.Workspace
+ATLAN.Shape = Enum.PartType.Block
+ATLAN.Color = Color3.new(5,5,500)
+ATLAN.CFrame = CFrame.new(-159, 36, -149)
+ATLAN.Transparency = 0
+ATLAN.CanCollide = true
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+  if key == "l" then
+      local FEmusic = true;
+local musicid = "0"; --edit the id
+local shotsound = true
+local shotsoundid = "0"--edit the id
+
+
+for i,v in pairs(game.ReplicatedStorage.WeaponScripts.WeaponConfigs:GetChildren()) do
+local gun = require(v)
+gun.magSize = 10000000
+gun.damage = 999
+gun.pellets = 30
+gun.reloadTime = 0
+gun.bulletSpeed = 100009999990
+gun.range = 200099
+gun.minSpread = 0
+gun.maxSprea = 0
+gun.RPM = 1000000000
+gun.fireMode = 1
+gun.customDamage.Head = 10000
+gun.spreadCooldown = 0
+gun.spreadAdd = 0
+
+if shotsound == true then
+   gun.shootSound = {shotsoundid,0, 0, true }
+end
+if FEmusic == true then
+       gun.equipSound = { musicid, 0, 0, true }
+end
+end
+end
+end)
+
