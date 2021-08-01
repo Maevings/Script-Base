@@ -1,0 +1,21 @@
+local breathing = "Flame Breathing" -- Breathings: Flame, Mist, Wind, Insect, Beast, Thunder, Water
+local art = "Drum" -- Demon Arts: Drum, String, Arrow, Sawmp, Temari
+local clan = "Kamado" -- Clans: Kamado, Tokito, Shinazugawa, Tsuyuri, Rengoku, Hashibira, Kocho, Agatsuma, Urokodaki, Tomioka
+local race = 4 -- Races: 1 and 2 = Human, 3 = Demon, 4 = Hybrid
+local mob = game:GetService("Workspace").Mobs.Zone4.NormalNpcs:WaitForChild("Mean Villager").Humanoid
+getrenv()._G.Data.Power = breathing
+getrenv()._G.Data.SecondaryPower = art
+getrenv()._G.Data.Race = race
+getrenv()._G.Data.Clan = clan
+getrenv()._G.Data.Data.Stat_Points = 1497
+getrenv()._G.Data.Data.Beli = 20000
+getrenv()._G.Data.Data.Mastery.Strength[1] = 150
+getrenv()._G.Data.Data.Mastery.Defense[1] = 150
+getrenv()._G.Data.Data.Mastery.Agility[1] = 150
+getrenv()._G.Data.Data.Mastery.Sword[1] = 150
+getrenv()._G.Data.Data.Mastery["Breathing Technique"][1] = 150
+getrenv()._G.Data.Data.Mastery["Demon Art"][1] = 150
+getrenv()._G.Data.Data.Exp[1] = 14996
+getrenv()._G.Data.Data.Exp[2] = 14999
+game:GetService("ReplicatedStorage").Remotes.DamageHandler:FireServer(mob)
+game:GetService("ReplicatedStorage").HandlerFire:FireServer("Module", "TakeDamage", mob, 400)
